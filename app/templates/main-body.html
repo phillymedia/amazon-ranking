@@ -1,0 +1,98 @@
+
+      <div class="graphicWrapper">
+        <h3 class="heading">How to pick a headquarters</h3>
+        <p class="description">We’ve collected data on nine criteria Amazon says are important to its pick of location for its second headquarters. Now it’s your turn to play the role of Amazon: Select which factors you think are important, drag them to order them by importance, and see which regions rise to the top — and where Philly stands.</p>
+
+        <div id="amazon-container">
+
+          <div id="rankList-container" class="left-container">
+            <div class="rank-least rank-leg">&#8592; least important</div>
+            <div class="rank-most rank-leg">most important &#8594;</div>
+            <div id="rankList-header">Rank me!</div>
+            <div id="rankList" class="list-group section">
+              <div id="tax" data-rank="0" class="drag unchecked"><span class="drag-handle">☰</span>Tax burden <input id="box1" type="checkbox" /><label for="box1"></label></div>
+              <div id="education" data-rank="1" class="list-group-item drag unchecked"><span class="drag-handle">☰</span>Educated labor force <input id="box2" type="checkbox" /><label for="box2"></label></div>
+              <div id="students" data-rank="2" class="list-group-item drag unchecked"><span class="drag-handle">☰</span>Students <input id="box3" type="checkbox" /><label for="box3"></label></div>
+              <div id="airport" data-rank="3" class="list-group-item drag unchecked"><span class="drag-handle">☰</span>Airport <input id="box4" type="checkbox" /><label for="box4"></label></div>
+              <div id="diversity" data-rank="4" class="list-group-item drag unchecked"><span class="drag-handle">☰</span>Diversity <input id="box5" type="checkbox" /><label for="box5"></label></div>
+              <div id="laborCosts" data-rank="5" class="list-group-item drag unchecked"><span class="drag-handle">☰</span>Labor costs <input id="box6" type="checkbox" /><label for="box6"></label></div>
+              <div id="transit" data-rank="6" class="list-group-item drag unchecked"><span class="drag-handle">☰</span>Traffic / Transit <input id="box7" type="checkbox" /><label for="box7"></label></div>
+              <div id="crime" data-rank="7" class="list-group-item drag unchecked"><span class="drag-handle">☰</span>Crime <input id="box8" type="checkbox" /><label for="box8"></label></div>
+              <div id="costOfLiving" data-rank="8" class="list-group-item drag unchecked"><span class="drag-handle">☰</span>Cost of living <input id="box9" type="checkbox" /><label for="box9"></label></div>
+            </div>
+            <div id="select-all">Select All <span><i class="fa fa-check-square-o" aria-hidden="true"></i></span></div>
+          </div>
+          <div class="right-container">
+            <div id="cleared">
+              <div>Please include at least one ranking <i class="fa fa-check-square-o" aria-hidden="true"></i></div>
+            </div>
+            <div class="right-top-container">
+              <div id="num1_container" class="blur">
+                <span id="num1_rank">#1</span>
+                <div id="num1_city"></div>
+
+              </div>
+              <table id="data-table" class="minim-table blur">
+                <tbody>
+                  <tr>
+                    <td>Population:
+                      <div class="subtext">people</div>
+                    </td>
+                    <td id="population_cell" class="data-highlight"></td>
+                    <td>Diversity:
+                      <div class="subtext">minority makeup</div>
+                    </td>
+                    <td id="diversity_raw_cell" class="data-highlight"></td>
+                  </tr>
+                  <tr>
+                    <td>Students:
+                      <div class="subtext">undergraduate students</div>
+                    </td>
+                    <td id="students_raw_cell" class="data-highlight"></td>
+                    <td>College Graduates:
+                      <div class="subtext">25+ with bachelor's</div>
+                    </td>
+                    <td id="education_raw_cell" class="data-highlight"></td>
+                  </tr>
+                  <tr>
+                    <td>Cost of Living:
+                      <div class="subtext">avg monthly housing cost</div>
+                    </td>
+                    <td id="costofliving_raw_cell" class="data-highlight"></td>
+                    <td>Labor Costs:
+                      <div class="subtext">avg imp salary*</div>
+                    </td>
+                    <td id="laborcosts_raw_cell" class="data-highlight"></td>
+                  </tr>
+                  <tr>
+                    <td>Crime rate:
+                      <div class="subtext">per 100,000 people</div>
+                    </td>
+                    <td id="crime_raw_cell" class="data-highlight"></td>
+                    <td>Transit:
+                      <div class="subtext">annual delay**</div>
+                    </td>
+                    <td id="transit_raw_cell" class="data-highlight"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="subtext blur" style="margin-top: -10px;position: relative;padding-bottom:5px; font-size:8px;">*Average salary for information management professionals.<br>**Annual hours of delay per auto commute</div>
+            </div>
+            <table id="rank-table" class="minim-table  blur">
+              <thead>
+                <tr>
+                  <th class="rank">RANK</th>
+                  <th class="city">CITY</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div id="results-map"></div>
+        </div>
+
+        <!-- <div class="source">Source: xxxXXX</div> -->
+        <div class="source credit">Credit: JARED WHALEN / Staff</div>
+
+      </div>
